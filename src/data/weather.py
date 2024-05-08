@@ -1,0 +1,19 @@
+
+
+from environs import Env
+
+
+env = Env()
+env.read_env()
+
+OPEN_WEATHER_URL = env.str("OPEN_WEATHER_URL")
+LATITUDE = env.str("LATITUDE")
+LONGITUDE = env.str("LONGITUDE")
+TEMPERATURE_UNIT = env.str("TEMPERATURE_UNIT")
+WIND_SPEED_UNIT = env.str("WIND_SPEED_UNIT")
+PRECIPITATION_UNIT = env.str("PRECIPITATION_UNIT")
+TIMEZONE = env.str("TIMEZONE")
+FORECAST_DAYS = env.int("FORECAST_DAYS")
+PAST_DAYS = env.int("PAST_DAYS")
+TIME_FORMAT = env.str("TIME_FORMAT")
+MODELS = env.str("MODELS")
